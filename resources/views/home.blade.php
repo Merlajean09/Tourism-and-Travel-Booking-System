@@ -27,7 +27,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Breeze Admin</title>
+    <title>Travel & Bookings</title>
     <link rel="stylesheet" href="dashboard/vendors/mdi/css/materialdesignicons.min.css" />
     <link rel="stylesheet" href="dashboard/vendors/flag-icon-css/css/flag-icon.min.css" />
     <link rel="stylesheet" href="dashboard/vendors/css/vendor.bundle.base.css" />
@@ -59,12 +59,12 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+            <a class="nav-link" data-toggle="collapse" href="#dashboard" aria-expanded="false" aria-controls="dashboard">
               <i class="mdi mdi-home menu-icon"></i>
               <span class="menu-title">Dashboard</span>
               <i class="menu-arrow"></i>
             </a>
-            <div class="collapse" id="ui-basic">
+            <div class="collapse" id="dashboard">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item">
                   <a class="nav-link" href="pages/ui-features/#">Buttons</a>
@@ -81,22 +81,8 @@
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <i class="mdi mdi-crosshairs-gps menu-icon"></i>
-              <span class="menu-title">ashboard</span>
-              <i class="menu-arrow"></i>
+              <span class="menu-title">About</span>
             </a>
-            <div class="collapse" id="ui-basic">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item">
-                  <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="pages/ui-features/dropdowns.html">Dropdowns</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="pages/ui-features/typography.html">Typography</a>
-                </li>
-              </ul>
-            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="pages/icons/mdi.html">
