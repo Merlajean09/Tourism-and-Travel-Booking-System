@@ -23,6 +23,8 @@ class UserController extends Controller
     public function create()
     {
         //
+        $user = User::get();
+        return view('user.create');
     }
 
     /**

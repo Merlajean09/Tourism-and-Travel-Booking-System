@@ -1,7 +1,6 @@
 @extends('home')
 @section('User')
 
-@endsection
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -62,3 +61,4 @@
 
 </body>
 </html>
+@endsection

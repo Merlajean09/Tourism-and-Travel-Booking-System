@@ -1,26 +1,3 @@
-<!-- @extends('layouts.app')
-
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    {{ __('You are logged in!') }}
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-@endsection -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -86,9 +63,9 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+            <a class="nav-link" data-toggle="collapse" href="#" aria-expanded="false" aria-controls="ui-basic">
               <i class="mdi mdi-crosshairs-gps menu-icon"></i>
-              <span class="menu-title">About</span>
+              <!-- <span class="menu-title">About</span> -->
             </a>
           </li>
           <li class="nav-item">
@@ -141,6 +118,7 @@
         </ul>
       </nav>
       <div class="container-fluid page-body-wrapper">
+
         <div id="theme-settings" class="settings-panel">
           <i class="settings-close mdi mdi-close"></i>
           <p class="settings-heading">SIDEBAR SKINS</p>
@@ -156,7 +134,6 @@
             <div class="tiles dark"></div>
           </div>
         </div>
-        @yield('User')
         <nav class="navbar col-lg-12 col-12 p-lg-0 fixed-top d-flex flex-row">
           <div class="navbar-menu-wrapper d-flex align-items-stretch justify-content-between">
             <a class="navbar-brand brand-logo-mini align-self-center d-lg-none" href="index.html"><img src="dashbhboard/images/logo-mini.svg" alt="logo" /></a>
@@ -275,6 +252,7 @@
             </button>
           </div>
         </nav>  
+        @yield('User')
         <!-- main-panel ends -->
       </div>
       <!-- page-body-wrapper ends -->
