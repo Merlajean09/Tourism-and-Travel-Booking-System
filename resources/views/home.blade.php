@@ -40,27 +40,27 @@
     <div class="container-scroller">
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <div class="text-center sidebar-brand-wrapper d-flex align-items-center">
-          <a class="sidebar-brand brand-logo" href="index.html"><img src="dashbhboard/images/logo.svg" alt="logo" /></a>
-          <a class="sidebar-brand brand-logo-mini pl-4 pt-3" href="index.html"><img src="dashbhboard/images/logo-mini.svg" alt="logo" /></a>
+          <a class="sidebar-brand brand-logo" href="index.html"><img src="dashboard/images/logo.svg" alt="logo" /></a>
+          <a class="sidebar-brand brand-logo-mini pl-4 pt-3" href="index.html"><img src="dashboard/images/logo-mini.svg" alt="logo" /></a>
         </div>
         <ul class="nav">
           <li class="nav-item nav-profile">
             <a href="#" class="nav-link">
               <div class="nav-profile-image">
-                <img src="dashbohboard/images/faces/face1.jpg" alt="profile" />
+                <!-- <img src="dashboard/images/faces/face1.jpg" alt="profile" /> -->
                 <span class="login-status online"></span>
                 <!--change to offline or busy as needed-->
               </div>
-              <div class="nav-profile-text d-flex flex-column pr-3">
+              <!-- <div class="nav-profile-text d-flex flex-column pr-3">
                 <span class="font-weight-medium mb-2">Meraco</span>
                 <span class="font-weight-normal">Venture</span>
-              </div>
-              <span class="badge badge-danger text-white ml-3 rounded">3</span>
+              </div> -->
+              <!-- <span class="badge badge-danger text-white ml-3 rounded">3</span> -->
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#dashboard" aria-expanded="false" aria-controls="dashboard">
-              <i class="mdi mdi-home menu-icon"></i>
+              <!-- <i class="mdi mdi-home menu-icon"></i> -->
               <span class="menu-title">Dashboard</span>
               <i class="menu-arrow"></i>
             </a>
@@ -80,15 +80,16 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="{{route('user.index')}}" aria-expanded="false" aria-controls="ui-basic">
-              <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+              <i class=" "></i>
               <!-- <span class="menu-title">User</span> -->
                <a href="/user">Users</a>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-              <i class="mdi mdi-crosshairs-gps menu-icon"></i>
-              <span class="menu-title">About</span>
+            <a class="nav-link" data-toggle="collapse" href="{{route('abouts.index')}}" aria-expanded="false" aria-controls="ui-basic">
+              <i class=" "></i>
+              <!-- <span class="menu-title">About</span> -->
+               <a href="/about">Abouts</a>
             </a>
           </li>
           <li class="nav-item">

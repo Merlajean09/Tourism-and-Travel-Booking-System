@@ -2,55 +2,66 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\About;
 use Illuminate\Http\Request;
 
 class AboutController extends Controller
 {
-
-    public function index(): View
+    /**
+     * Display a listing of the resource.
+     */
+    public function index()
     {
-        $abouts = About::all();
-        return view ('abouts.index')->with('abouts', $abouts);
+        //
+        $abouts = About::get();
+        return view('about.index', compact('abouts'));
     }
 
- 
-    public function create(): View
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function create()
     {
-        return view('abouts.create');
+        //
     }
 
-  
-    public function store(Request $request): RedirectResponse
+    /**
+     * Store a newly created resource in storage.
+     */
+    public function store(Request $request)
     {
-        $input = $request->all();
-        About::create($input);
-        return redirect('about')->with('flash_message', 'About Addedd!');
+        //
     }
 
-    public function show(string $id): View
+    /**
+     * Display the specified resource.
+     */
+    public function show(string $id)
     {
-        $about = About::find($id);
-        return view('abouts.show')->with('abouts', $about);
+        //
     }
 
-    public function edit(string $id): View
+    /**
+     * Show the form for editing the specified resource.
+     */
+    public function edit(string $id)
     {
-        $about = About::find($id);
-        return view('abouts.edit')->with('abouts', $about);
+        //
     }
 
-    public function update(Request $request, string $id): RedirectResponse
+    /**
+     * Update the specified resource in storage.
+     */
+    public function update(Request $request, string $id)
     {
-        $about = About::find($id);
-        $input = $request->all();
-        $about->update($input);
-        return redirect('about')->with('flash_message', 'about Updated!');  
+        //
     }
 
-    
-    public function destroy(string $id): RedirectResponse
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function destroy(string $id)
     {
-        About::destroy($id);
-        return redirect('about')->with('flash_message', 'About deleted!'); 
+        //
     }
 }
