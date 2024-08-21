@@ -63,16 +63,13 @@
             </a>
           </li>
           <li class="nav-item">
-<<<<<<< HEAD
             <a class="nav-link" data-toggle="collapse" href="#" aria-expanded="false" aria-controls="ui-basic">
               <i class="mdi mdi-crosshairs-gps menu-icon"></i>
               <!-- <span class="menu-title">About</span> -->
-=======
             <a class="nav-link" data-toggle="collapse" href="{{route('abouts.index')}}" aria-expanded="false" aria-controls="ui-basic">
               <i class=" "></i>
               <!-- <span class="menu-title">About</span> -->
                <a href="/about">Abouts</a>
->>>>>>> ab56b3106c0021631ead0721ad64b7c1132996d6
             </a>
           </li>
           <li class="nav-item">
@@ -231,16 +228,6 @@
               </li>
             </ul>
             <ul class="navbar-nav navbar-nav-right ml-lg-auto">
-              <!-- <li class="nav-item dropdown d-none d-xl-flex border-0">
-                <a class="nav-link dropdown-toggle" id="languageDropdown" href="#" data-toggle="dropdown">
-                  <i class="mdi mdi-earth"></i> English </a>
-                <div class="d ropdown-menu navbar-dropdown" aria-labelledby="languageDropdown">
-                  <a class="dropdown-item" href="#"> French </a>
-                  <a class="dropdown-item" href="#"> Spain </a>
-                  <a class="dropdown-item" href="#"> Latin </a>
-                  <a class="dropdown-item" href="#"> Japanese </a>
-                </div>
-              </li> -->
               <li class="nav-item nav-profile dropdown border-0">
                 <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-toggle="dropdown">
                   <img class="nav-profile-img mr-2" alt="" src="dashboard/images/faces/face1.jpg" />
