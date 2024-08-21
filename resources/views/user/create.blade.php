@@ -43,8 +43,7 @@
                     @enderror
                 </div>
             </div>
-
-
+            
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
@@ -66,9 +65,6 @@
                 </div>
             </div>
         </div>
-
-    
-
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 </div>
