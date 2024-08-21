@@ -10,6 +10,7 @@ use Laravel\Sanctum\HasApiTokens;
 
 class About extends Authenticatable
 {
+<<<<<<< HEAD
     use HasApiTokens, HasFactory, Notifiable;
 
     /**
@@ -41,4 +42,9 @@ class About extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+=======
+    protected $table = 'abouts';
+    protected $primaryKey = 'id';
+    protected $fillable = ['name', 'address', 'description'];
+>>>>>>> ab56b3106c0021631ead0721ad64b7c1132996d6
 }

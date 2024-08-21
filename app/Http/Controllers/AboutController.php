@@ -14,7 +14,11 @@ class AboutController extends Controller
     {
         //
         $abouts = About::get();
+<<<<<<< HEAD
         return view('abouts.index', compact('abouts'));
+=======
+        return view('about.index', compact('abouts'));
+>>>>>>> ab56b3106c0021631ead0721ad64b7c1132996d6
     }
 
     /**

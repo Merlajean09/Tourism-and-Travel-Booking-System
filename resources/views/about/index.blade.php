@@ -1,25 +1,12 @@
 @extends('home')
 @section('User')
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>User</title>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
-</head>
-<body>
-
-<div class="container mt-2">
-
 <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Users</h2>
+                <h2>About</h2>
             </div>
             <div class="pull-right mb-2">
-                <a class="btn btn-success" href="{{route('user.create')}}">Add User</a>
+                <a class="btn btn-success" href="{{route('abouts.create')}}">Add Abouts</a>
             </div>
         </div>
     </div>
@@ -38,13 +25,13 @@
         </tr>
         
         <tr>
-            @foreach($user as $users)
-            <td>{{$users->id}}</td>
-            <td>{{$users->email}}</td>
+            @foreach($abouts as $abouts)
+            <td>{{$abouts->id}}</td>
+            <td>{{$abouts->email}}</td>
             <td>
-                <form action="{{route('user.destroy', $users->id)}}" method="POST">
+                <form action="{{route('abouts.destroy', $abouts->id)}}" method="POST">
     
-                    <a class="btn btn-primary" href="{{route('user.edit', $users->id)}}">Edit</a>
+                    <a class="btn btn-primary" href="{{route('abouts.edit', $abouts->id)}}">Edit</a>
    
                     @csrf
                     @method('DELETE')
@@ -59,10 +46,5 @@
                 <a class="btn btn-primary" href="{{ route('home') }}" enctype="multipart/form-data"> Back</a>
             </div>
 
-</body>
-</html>
-<<<<<<< HEAD
-=======
 
->>>>>>> ab56b3106c0021631ead0721ad64b7c1132996d6
 @endsection

@@ -2311,8 +2311,8 @@ pre {
 .col-xl-auto {
   position: relative;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px; }
+  padding-right: 100px;
+  padding-left: 100px; }
 
 .col {
   -ms-flex-preferred-size: 0;
@@ -11202,7 +11202,7 @@ code {
     font-size: 40px; }
   .content-wrapper .card-calender ul li {
     list-style: none;
-    padding: 5px 23px 20px 23px;
+    padding: 5px 23px 20px 23px; 
     margin: 0 3px; }
     .content-wrapper .card-calender ul li.active {
       border-radius: 3px;
