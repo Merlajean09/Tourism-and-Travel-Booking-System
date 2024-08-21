@@ -55,7 +55,7 @@
 				<div class="container main-menu">
 					<div class="row align-items-center justify-content-between d-flex">
 				      <div id="logo">
-				        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" title="" /></a> -->
+				        <a href="index.html"><img src="assets/img/mera.jpg" alt="" title="" /></a>
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
@@ -98,11 +98,7 @@
 							<p class="text-white">
 								If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $.17 each.
 							</p>
-<<<<<<< HEAD
 							<a href="#" class="primary-btn text-uppercase">Log In</a>
-=======
-							<!-- <a href="#" class="primary-btn text-uppercase">Get Started</a> -->
->>>>>>> 621f65ec588966aa382b9d18a2b6514fa6231978
 						</div>
 						<div class="col-lg-4 col-md-6 banner-right">
 							<ul class="nav nav-tabs" id="myTab" role="tablist">
