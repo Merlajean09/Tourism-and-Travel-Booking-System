@@ -63,16 +63,10 @@
             </a>
           </li>
           <li class="nav-item">
-<<<<<<< HEAD
-            <a class="nav-link" data-toggle="collapse" href="#" aria-expanded="false" aria-controls="ui-basic">
-              <i class="mdi mdi-crosshairs-gps menu-icon"></i>
-              <!-- <span class="menu-title">About</span> -->
-=======
             <a class="nav-link" data-toggle="collapse" href="{{route('abouts.index')}}" aria-expanded="false" aria-controls="ui-basic">
-              <i class=" "></i>
+              <!-- <i class="mdi mdi-crosshairs-gps menu-icon"></i> -->
               <!-- <span class="menu-title">About</span> -->
-               <a href="/about">Abouts</a>
->>>>>>> ab56b3106c0021631ead0721ad64b7c1132996d6
+               <a href="/abouts">Abouts</a>
             </a>
           </li>
           <li class="nav-item">
