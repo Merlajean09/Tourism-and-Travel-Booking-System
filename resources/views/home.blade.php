@@ -63,9 +63,26 @@
           </li>
           </div>
           <li class="nav-item">
+<<<<<<< HEAD
             <a class="nav-link" data-toggle="collapse" href="{{route('booking.index')}}" aria-expanded="false" aria-controls="ui-basic">
               <i class=" "></i>
               <a href="/booking">Bookings</a>
+=======
+<<<<<<< HEAD
+            <a class="nav-link" data-toggle="collapse" href="#" aria-expanded="false" aria-controls="ui-basic">
+              <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+              <!-- <span class="menu-title">About</span> -->
+=======
+>>>>>>> f4dca47389cf29031d0307123c0b94156995d3d7
+            <a class="nav-link" data-toggle="collapse" href="{{route('abouts.index')}}" aria-expanded="false" aria-controls="ui-basic">
+              <!-- <i class="mdi mdi-crosshairs-gps menu-icon"></i> -->
+              <!-- <span class="menu-title">About</span> -->
+<<<<<<< HEAD
+               <a href="/about">Abouts</a>
+=======
+               <a href="/abouts">Abouts</a>
+>>>>>>> f4dca47389cf29031d0307123c0b94156995d3d7
+>>>>>>> 704e0a6db1d5ad5a98491ebcd551adec820bb826
             </a>
           </li>
           <li class="nav-item">
@@ -224,16 +241,6 @@
               </li>
             </ul>
             <ul class="navbar-nav navbar-nav-right ml-lg-auto">
-              <!-- <li class="nav-item dropdown d-none d-xl-flex border-0">
-                <a class="nav-link dropdown-toggle" id="languageDropdown" href="#" data-toggle="dropdown">
-                  <i class="mdi mdi-earth"></i> English </a>
-                <div class="d ropdown-menu navbar-dropdown" aria-labelledby="languageDropdown">
-                  <a class="dropdown-item" href="#"> French </a>
-                  <a class="dropdown-item" href="#"> Spain </a>
-                  <a class="dropdown-item" href="#"> Latin </a>
-                  <a class="dropdown-item" href="#"> Japanese </a>
-                </div>
-              </li> -->
               <li class="nav-item nav-profile dropdown border-0">
                 <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-toggle="dropdown">
                   <img class="nav-profile-img mr-2" alt="" src="dashboard/images/faces/face1.jpg" />

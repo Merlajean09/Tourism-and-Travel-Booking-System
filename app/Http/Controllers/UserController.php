@@ -36,7 +36,6 @@ class UserController extends Controller
         User::create($request->all());
         return redirect()->route('user.index');
     }
-
     /**
      * Display the specified resource.
      */
@@ -44,7 +43,6 @@ class UserController extends Controller
     {
         //
     }
-
     /**
      * Show the form for editing the specified resource.
      */
@@ -54,6 +52,7 @@ class UserController extends Controller
         return view('user.edit',compact('users'));
     }
 
+    // Pass the $user variable to the view
     /**
      * Update the specified resource in storage.
      */

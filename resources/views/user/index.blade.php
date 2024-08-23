@@ -18,10 +18,12 @@
             <div class="pull-left">
                 <h2>Users</h2>
             </div>
-            <div class="pull-right mb-2">
+
+            <!-- <a href="{{route('user.create')}}">Add User</a> -->
+        </div>
+        <div class="pull-right mb-2">
                 <a class="btn btn-success" href="{{route('user.create')}}">Add User</a>
             </div>
-        </div>
     </div>
    
     @if ($message = Session::get('success'))
@@ -33,14 +35,18 @@
     <table class="table table-bordered">
         <tr>
             <th>#</th>
+            <th>Name</th>
             <th>Email</th>
+            <th>Password</th>
             <th width="280px">Action</th>
         </tr>
         
         <tr>
             @foreach($user as $users)
             <td>{{$users->id}}</td>
+            <td>{{$users->name}}</td>
             <td>{{$users->email}}</td>
+            <td>{{$users->password}}</td>
             <td>
                 <form action="{{route('user.destroy', $users->id)}}" method="POST">
     
