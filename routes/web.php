@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\UserController;
-use App\Http\Controllers\AboutController;
+use App\Http\Controllers\BookingController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -25,5 +25,5 @@ Auth::routes();
 
 Route::get('/home' , [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::resource('user', UserController::class);
-Route::resource('abouts', AboutController::class);
+Route::resource('booking', BookingController::class);
 

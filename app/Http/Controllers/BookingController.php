@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
+use App\Models\Booking;
 use Illuminate\Http\Request;
-use Illuminate\Http\RedirectResponse;
 
-class UserController extends Controller
+class BookingController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +13,8 @@ class UserController extends Controller
     public function index()
     {
         //
-        $user = User::get();
-        return view('user.index', compact('user')) ->with('i');
+        $bookings = Booking::get();
+        return view('booking.index', compact('bookings'));
     }
 
     /**
@@ -23,8 +22,9 @@ class UserController extends Controller
      */
     public function create()
     {
-        
-        return view('user.create');
+        //
+        $bookings = Booking::get();
+        return view('booking.create');
     }
 
     /**
@@ -33,8 +33,6 @@ class UserController extends Controller
     public function store(Request $request)
     {
         //
-        User::create($request->all());
-        return redirect()->route('user.index');
     }
 
     /**
@@ -51,26 +49,21 @@ class UserController extends Controller
     public function edit(string $id)
     {
         //
-        return view('user.edit',compact('users'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, User $user):RedirectResponse
+    public function update(Request $request, string $id)
     {
         //
-        $user->update($request->all());
-        return redirect()->route('user.index');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(User $user): RedirectResponse
+    public function destroy(string $id)
     {
         //
-        $user->delete();
-        return redirect()->route('user.index')->with('i');
     }
 }

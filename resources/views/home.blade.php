@@ -39,9 +39,9 @@
             <a class="nav-link" data-toggle="collapse" href="#dashboard" aria-expanded="false" aria-controls="dashboard">
               <!-- <i class="mdi mdi-home menu-icon"></i> -->
               <span class="menu-title">Dashboard</span>
-              <i class="menu-arrow"></i>
+              <!-- <i class="menu-arrow"></i> -->
             </a>
-            <div class="collapse" id="dashboard">
+            <!-- <div class="collapse" id="dashboard">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item">
                   <a class="nav-link" href="pages/ui-features/#">Buttons</a>
@@ -53,20 +53,19 @@
                   <a class="nav-link" href="pages/ui-features/#">Typography</a>
                 </li>
               </ul>
-            </div>
+            </div> -->
           </li>
+          <div>
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="{{route('user.index')}}" aria-expanded="false" aria-controls="ui-basic">
-              <i class=" "></i>
-              <!-- <span class="menu-title">User</span> -->
                <a href="/user">Users</a>
             </a>
           </li>
+          </div>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="{{route('abouts.index')}}" aria-expanded="false" aria-controls="ui-basic">
-              <!-- <i class="mdi mdi-crosshairs-gps menu-icon"></i> -->
-              <!-- <span class="menu-title">About</span> -->
-               <a href="/abouts">Abouts</a>
+            <a class="nav-link" data-toggle="collapse" href="{{route('booking.index')}}" aria-expanded="false" aria-controls="ui-basic">
+              <i class=" "></i>
+              <a href="/booking">Bookings</a>
             </a>
           </li>
           <li class="nav-item">
@@ -120,7 +119,7 @@
       </nav>
       <div class="container-fluid page-body-wrapper">
 
-        <div id="theme-settings" class="settings-panel">
+        <!-- <div id="theme-settings" class="settings-panel">
           <i class="settings-close mdi mdi-close"></i>
           <p class="settings-heading">SIDEBAR SKINS</p>
           <div class="sidebar-bg-options selected" id="sidebar-default-theme">
@@ -134,7 +133,7 @@
             <div class="tiles light"></div>
             <div class="tiles dark"></div>
           </div>
-        </div>
+        </div> -->
         <nav class="navbar col-lg-12 col-12 p-lg-0 fixed-top d-flex flex-row">
           <div class="navbar-menu-wrapper d-flex align-items-stretch justify-content-between">
             <a class="navbar-brand brand-logo-mini align-self-center d-lg-none" href="index.html"><img src="dashbhboard/images/logo-mini.svg" alt="logo" /></a>
