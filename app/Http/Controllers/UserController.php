@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Http\RedirectResponse;
 
 class UserController extends Controller
 {
@@ -13,8 +14,8 @@ class UserController extends Controller
     public function index()
     {
         //
-        $user =  User::get();
-        return view('user.index', compact('user'));
+        $user = User::get();
+        return view('user.index', compact('user')) ->with('i');
     }
 
     /**
@@ -22,7 +23,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        
         return view('user.create');
     }
 
@@ -32,6 +33,7 @@ class UserController extends Controller
     public function store(Request $request)
     {
         //
+<<<<<<< HEAD
         // User::create($request->all());
         // return view('user.index');
 {
@@ -51,6 +53,10 @@ class UserController extends Controller
     return redirect()->route('user.index')
         ->with('status', 'User created successfully');
 }
+=======
+        User::create($request->all());
+        return redirect()->route('user.index');
+>>>>>>> 239358f9bb9e1bf21c8106fc79bf8e5916a49227
     }
     /**
      * Display the specified resource.
@@ -62,70 +68,30 @@ class UserController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    // public function edit(string $id)
-    // {
-    //     //
-    //     return view('user.edit', compact('user'));
-    // }
     public function edit(string $id)
-{
-    // Fetch the user from the database using the provided $id
-    $user = User::findOrFail($id);
+    {
+        //
+        return view('user.edit',compact('users'));
+    }
 
     // Pass the $user variable to the view
-    return view('user.edit', compact('user'));
-}
     /**
      * Update the specified resource in storage.
      */
+    public function update(Request $request, User $user):RedirectResponse
+    {
+        //
+        $user->update($request->all());
+        return redirect()->route('user.index');
+    }
 
-     public function update(Request $request, string $id)
-{
-    // Validate the request data
-    $data = $request->validate([
-        'email' => 'required',
-    ]);
-
-    // Fetch the user from the database using the provided $id
-    $user = User::findOrFail($id);
-
-    // Update the user with the validated data
-    $user->update($data);
-
-    // Redirect to the user index route
-    return redirect()->route('user.index');
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function destroy(User $user): RedirectResponse
+    {
+        //
+        $user->delete();
+        return redirect()->route('user.index')->with('i');
+    }
 }
-
-public function destroy(string $id)
-{
-    // Fetch the user from the database using the provided $id
-    $user = User::findOrFail($id);
-
-    // Delete the user
-    $user->delete();
-
-    // Redirect to the user index route
-    return redirect()->route('user.index');
-}
-}
-//     public function update(Request $request, string $id)
-//     {
-//         //
-//         $data =  $request->validate([
-//             'email' => 'required',
-//         ]);
-       
-//         $user->update($data);
-    
-//         return redirect()->route('user.index');
-//     }
-//     /**
-//      * Remove the specified resource from storage.
-//      */
-//     public function destroy(string $id)
-//     {
-//         //
-//         $user->delete();
-//         return redirect()->route('user.index');
-//     }
-// }

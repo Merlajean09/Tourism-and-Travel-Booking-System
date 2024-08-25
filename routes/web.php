@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\UserController;
-use App\Http\Controllers\AboutController;
+use App\Http\Controllers\BookingController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -25,5 +25,9 @@ Route::get('/', function () {
 
 Route::get('/home' , [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::resource('user', UserController::class);
+<<<<<<< HEAD
 // Route::resource('abouts', AboutController::class);
+=======
+Route::resource('booking', BookingController::class);
+>>>>>>> 239358f9bb9e1bf21c8106fc79bf8e5916a49227
 
