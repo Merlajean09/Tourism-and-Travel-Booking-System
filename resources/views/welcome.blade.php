@@ -80,7 +80,7 @@
 				            </ul>
 				          </li>					          					          		          
 				          <li><a href="contact.html">Contact</a></li>
-						  <li><a href="{{ route('login')}}">Login</a></li>
+						  <li><a href="">Login</a></li>
 				        </ul>
 				      </nav><!-- #nav-menu-container -->					      		  
 					</div>

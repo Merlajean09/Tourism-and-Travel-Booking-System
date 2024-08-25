@@ -37,8 +37,8 @@
             <th>#</th>
             <th>Name</th>
             <th>Email</th>
-            <th>Password</th>
-            <th width="280px">Action</th>
+            <th>Role</th>
+            <!-- <th width="280px">Action</th> -->
         </tr>
         
         <tr>
@@ -46,7 +46,7 @@
             <td>{{$users->id}}</td>
             <td>{{$users->name}}</td>
             <td>{{$users->email}}</td>
-            <td>{{$users->password}}</td>
+            <td>{{$users->role}}</td>
             <td>
                 <form action="{{route('user.destroy', $users->id)}}" method="POST">
     
