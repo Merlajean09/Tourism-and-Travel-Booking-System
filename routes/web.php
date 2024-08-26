@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\BookingController;
+use App\Http\Controllers\DestinationController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -26,4 +27,4 @@ Auth::routes();
 Route::get('/home' , [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::resource('user', UserController::class);
 Route::resource('booking', BookingController::class);
-
+Route::resource('destinations', DestinationController::class);

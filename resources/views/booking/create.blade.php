@@ -18,7 +18,7 @@
             <h2>Add Booking</h2>
         </div>
         <div class="pull-right">
-            <a class="btn btn-primary" href="{{ route('booking.index') }}"> Back</a>
+            <a class="btn btn-primary" href="{{ route('bookings.index') }}"> Back</a>
         </div>
     </div>
     </div>
