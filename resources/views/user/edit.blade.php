@@ -29,53 +29,25 @@
         {{ session('status') }}
     </div>
     @endif
- 
-    <form action="{{ route('user.update', $user->id) }}" method="POST" enctype="multipart/form-data">
+    <form action="{{ route('user.update', $user->id) }}" method="POST">
         @csrf
         @method('PUT')
-
-
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12">
-                <div class="form-group">
-                    <label for="name"><strong>Name:</strong></label>
-                    <input type="text" name="user_name" value="{{ $user->name }}" class="form-control" placeholder="Enter Name">
-                    @error('name')
-                    <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
-                    @enderror
-                </div>
-            </div>
-        </div>
-   
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12">
-                <div class="form-group">
-                    <label for="email"><strong>Email:</strong></label>
-                    <input type="text" name="email" value="{{ $user->email }}" class="form-control" placeholder="Enter Email">
-                    @error('email')
-                    <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
-                    @enderror
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12">
-                <div class="form-group">
-                    <label for="role"><strong>Role:</strong></label>
-                    <input type="text" name="role" value="{{ $user->role }}" class="form-control" placeholder="Enter Role">
-                    @error('email')
-                    <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
-                    @enderror
-                </div>
-            </div>
-        </div>
-
-            
-        <button type="submit" class="btn btn-primary ml-3">Submit</button>
-          
+        <input type="text" name="name" value="{{ $user->name }}">
+        <input type="email" name="email" value="{{ $user->email }}">
+        <label for="role">Role:
+            <select name="role" id="role">
+                <option value="admin">Admin</option>
+                <option value="customer">Customer</option>
+                <option value="agent">Agent</option>
+                <option value="partner">Partner</option>
+                </optgroup>
+            </select>
+        </label>
     </form>
+        <button type="submit" class="pull-right btn btn-success">Update</button>
+
+</form>
 </div>
-@endsection
 </body>
 </html>
+@endsection

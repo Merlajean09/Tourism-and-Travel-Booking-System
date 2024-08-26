@@ -39,9 +39,9 @@
             <a class="nav-link" data-toggle="collapse" href="#dashboard" aria-expanded="false" aria-controls="dashboard">
               <!-- <i class="mdi mdi-home menu-icon"></i> -->
               <span class="menu-title">Dashboard</span>
-              <!-- <i class="menu-arrow"></i> -->
+              <i class="menu-arrow"></i>
             </a>
-            <!-- <div class="collapse" id="dashboard">
+            <div class="collapse" id="dashboard">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item">
                   <a class="nav-link" href="pages/ui-features/#">Buttons</a>
@@ -53,7 +53,7 @@
                   <a class="nav-link" href="pages/ui-features/#">Typography</a>
                 </li>
               </ul>
-            </div> -->
+            </div>
           </li>
           <div>
           <li class="nav-item">
@@ -62,31 +62,17 @@
             </a>
           </li>
           </div>
+
+          <div>
           <li class="nav-item">
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            <a class="nav-link" data-toggle="collapse" href="{{route('booking.index')}}" aria-expanded="false" aria-controls="ui-basic">
-              <i class=" "></i>
-              <a href="/booking">Bookings</a>
-=======
-<<<<<<< HEAD
->>>>>>> 239358f9bb9e1bf21c8106fc79bf8e5916a49227
-            <a class="nav-link" data-toggle="collapse" href="#" aria-expanded="false" aria-controls="ui-basic">
-              <i class="mdi mdi-crosshairs-gps menu-icon"></i>
-              <!-- <span class="menu-title">About</span> -->
-            <a class="nav-link" data-toggle="collapse" href="" aria-expanded="false" aria-controls="ui-basic">
-              <!-- <i class="mdi mdi-crosshairs-gps menu-icon"></i> -->
-              <!-- <span class="menu-title">About</span> -->
-               <a href="/about">Abouts</a>
-<<<<<<< HEAD
-=======
-=======
-               <a href="/abouts">Abouts</a>
->>>>>>> f4dca47389cf29031d0307123c0b94156995d3d7
->>>>>>> 704e0a6db1d5ad5a98491ebcd551adec820bb826
->>>>>>> 239358f9bb9e1bf21c8106fc79bf8e5916a49227
+            <a class="nav-link" data-toggle="collapse" href="{{route('destination.index')}}" aria-expanded="false" aria-controls="ui-basic">
+               <a href="/destination">Destination</a>
             </a>
+          </li>
+          </div>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#" aria-expanded="false" aria-controls="ui-basic">
+              <a href="/booking">Bookings</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="pages/icons/mdi.html">

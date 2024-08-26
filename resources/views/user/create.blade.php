@@ -49,25 +49,26 @@
                     <div class="form-group">
                         <label for="email">Email:</label>
                         <input type="text" id="email" name="email" class="form-control" placeholder="Enter Email">
+                        <select name="roles" id="roles">
+                        <option value="admin">Admin</option>
+                        <option value="customer">Customer</option>
+                        
+
+
+
+                        </optgroup>
+                    </select>
                         @error('email')
                         <div class ="alert alert-danger mt-1">{{ $message}}</div>
                         @enderror
                     </div>
-                </div>
-
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="role">Role:</label>
-                    <input type="role" id="role" name="role" class="form-control" placeholder="Enter R">
-                    @error('role')
-                    <div class ="alert alert-danger mt-1">{{ $message}}</div>
-                    @enderror
+                    
                 </div>
             </div>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 </div>
-@endsection
 </body>
 </html>
+@endsection
