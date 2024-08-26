@@ -28,11 +28,6 @@
                 <span class="login-status online"></span>
                 <!--change to offline or busy as needed-->
               </div>
-              <!-- <div class="nav-profile-text d-flex flex-column pr-3">
-                <span class="font-weight-medium mb-2">Meraco</span>
-                <span class="font-weight-normal">Venture</span>
-              </div> -->
-              <!-- <span class="badge badge-danger text-white ml-3 rounded">3</span> -->
             </a>
           </li>
           <li class="nav-item">
@@ -57,7 +52,7 @@
           </li>
           <div>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="{{route('user.index')}}" aria-expanded="false" aria-controls="ui-basic">
+            <a class="nav-link" data-toggle="collapse" href="{{route('user.index')}}">
                <a href="/user">Users</a>
             </a>
           </li>
@@ -75,9 +70,8 @@
               <a href="/booking">Bookings</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="pages/icons/mdi.html">
-              <i class="mdi mdi-contacts menu-icon"></i>
-              <span class="menu-title">Icons</span>
+            <a class="nav-link" href="{{route('destinations.index')}}">
+              <a href="/destinations">Destination</a>
             </a>
           </li>
           <li class="nav-item">
@@ -125,22 +119,7 @@
       </nav>
       <div class="container-fluid page-body-wrapper">
 
-        <!-- <div id="theme-settings" class="settings-panel">
-          <i class="settings-close mdi mdi-close"></i>
-          <p class="settings-heading">SIDEBAR SKINS</p>
-          <div class="sidebar-bg-options selected" id="sidebar-default-theme">
-            <div class="img-ss rounded-circle bg-light border mr-3"></div> Default
-          </div>
-          <div class="sidebar-bg-options" id="sidebar-dark-theme">
-            <div class="img-ss rounded-circle bg-dark border mr-3"></div> Dark
-          </div>
-          <p class="settings-heading mt-2">HEADER SKINS</p>
-          <div class="color-tiles mx-0 px-4">
-            <div class="tiles light"></div>
-            <div class="tiles dark"></div>
-          </div>
-        </div> -->
-        <nav class="navbar col-lg-12 col-12 p-lg-0 fixed-top d-flex flex-row">
+      <nav class="navbar col-lg-12 col-12 p-lg-0 fixed-top d-flex flex-row">
           <div class="navbar-menu-wrapper d-flex align-items-stretch justify-content-between">
             <a class="navbar-brand brand-logo-mini align-self-center d-lg-none" href="index.html"><img src="dashbhboard/images/logo-mini.svg" alt="logo" /></a>
             <button class="navbar-toggler navbar-toggler align-self-center mr-2" type="button" data-toggle="minimize">
