@@ -43,7 +43,7 @@
                     @enderror
                 </div>
             </div>
-            
+
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
@@ -57,9 +57,9 @@
 
             <div class="col-md-6">
                 <div class="form-group">
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" class="form-control" placeholder="Enter Password">
-                    @error('password')
+                    <label for="role">Role:</label>
+                    <input type="role" id="role" name="role" class="form-control" placeholder="Enter R">
+                    @error('role')
                     <div class ="alert alert-danger mt-1">{{ $message}}</div>
                     @enderror
                 </div>

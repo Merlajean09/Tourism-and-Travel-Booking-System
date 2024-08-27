@@ -46,8 +46,29 @@
           </li>
           </div>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="{{route('booking.index')}}">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+            <a class="nav-link" data-toggle="collapse" href="{{route('booking.index')}}" aria-expanded="false" aria-controls="ui-basic">
+              <i class=" "></i>
               <a href="/booking">Bookings</a>
+=======
+<<<<<<< HEAD
+>>>>>>> 239358f9bb9e1bf21c8106fc79bf8e5916a49227
+            <a class="nav-link" data-toggle="collapse" href="#" aria-expanded="false" aria-controls="ui-basic">
+              <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+              <!-- <span class="menu-title">About</span> -->
+            <a class="nav-link" data-toggle="collapse" href="" aria-expanded="false" aria-controls="ui-basic">
+              <!-- <i class="mdi mdi-crosshairs-gps menu-icon"></i> -->
+              <!-- <span class="menu-title">About</span> -->
+               <a href="/about">Abouts</a>
+<<<<<<< HEAD
+=======
+=======
+               <a href="/abouts">Abouts</a>
+>>>>>>> f4dca47389cf29031d0307123c0b94156995d3d7
+>>>>>>> 704e0a6db1d5ad5a98491ebcd551adec820bb826
+>>>>>>> 239358f9bb9e1bf21c8106fc79bf8e5916a49227
             </a>
           </li>
           <li class="nav-item">

@@ -62,8 +62,8 @@
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <label for="password"><strong>Password:</strong></label>
-                    <input type="text" name="password" value="{{ $user->password }}" class="form-control" placeholder="Enter Password">
+                    <label for="role"><strong>Role:</strong></label>
+                    <input type="text" name="role" value="{{ $user->role }}" class="form-control" placeholder="Enter Role">
                     @error('email')
                     <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                     @enderror

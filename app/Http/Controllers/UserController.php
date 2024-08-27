@@ -33,8 +33,30 @@ class UserController extends Controller
     public function store(Request $request)
     {
         //
+<<<<<<< HEAD
+        // User::create($request->all());
+        // return view('user.index');
+{
+    // Validate the request data
+    $request->validate([
+        'name' => 'required|string|max:255',  // Name is required
+        'email' => 'required|email',
+        'role' => 'required',
+    ]);
+    // Create a new user
+    $user = new User;
+    $user->name = $request->name;
+    $user->email = $request->email;
+    $user->role = $request->role;
+    $user->save();
+    // Redirect back to the user list with a success message
+    return redirect()->route('user.index')
+        ->with('status', 'User created successfully');
+}
+=======
         User::create($request->all());
         return redirect()->route('user.index');
+>>>>>>> 239358f9bb9e1bf21c8106fc79bf8e5916a49227
     }
     /**
      * Display the specified resource.
