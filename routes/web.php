@@ -26,8 +26,5 @@ Route::get('/', function () {
 
 Route::get('/home' , [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::resource('user', UserController::class);
-<<<<<<< HEAD
-// Route::resource('abouts', AboutController::class);
-=======
 Route::resource('booking', BookingController::class);
 Route::resource('destinations', DestinationController::class);

@@ -33,7 +33,6 @@ class UserController extends Controller
     public function store(Request $request)
     {
         //
-<<<<<<< HEAD
         // User::create($request->all());
         // return view('user.index');
 {
@@ -53,10 +52,6 @@ class UserController extends Controller
     return redirect()->route('user.index')
         ->with('status', 'User created successfully');
 }
-=======
-        User::create($request->all());
-        return redirect()->route('user.index');
->>>>>>> 239358f9bb9e1bf21c8106fc79bf8e5916a49227
     }
     /**
      * Display the specified resource.
